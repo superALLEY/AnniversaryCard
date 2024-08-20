@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffb6c1; /* Background light pink */
+}
+
+.carte {
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carte:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #ff69b4;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.message {
+    display: none;
+    font-size: 18px;
+    margin: 15px 0;
+    color: #333;
+}
+
+#afficher-btn {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+#afficher-btn:hover {
+    background-color: #ff1493;
+}
+
+.photo {
+    width: 80%;
+    height: auto;
+    display: none;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.photo-visible {
+    display: block;
+    transform: scale(1.05); 
+}
+
+.carte:hover .photo-visible {
+    transform: scale(1.15);
+}
